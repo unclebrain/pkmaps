@@ -90,7 +90,12 @@
     controlDiv.index = 1;
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(controlDiv);
 }
-  addYourLocationButton(map);
+var myMarker = new google.maps.Marker({
+  map: map,
+  animation: google.maps.Animation.DROP,
+  position: faisalabad
+});
+addYourLocationButton(map, myMarker);
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEqX2Wd1DCH9J2OqFD83Q9lfAJ8pcvuhg&callback=initMap">
