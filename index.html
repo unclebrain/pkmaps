@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdn.klokantech.com/maptilerlayer/v1/index.js"></script>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <title>KML Layers</title>
@@ -32,7 +33,8 @@
         
         
       }
-      
+      var geoloccontrol = new klokantech.GeolocationControl(map, mapMaxZoom);
+
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEqX2Wd1DCH9J2OqFD83Q9lfAJ8pcvuhg&callback=initMap">
